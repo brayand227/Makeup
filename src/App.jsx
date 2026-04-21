@@ -4,6 +4,8 @@ import ProductDetail from './components/ProductDetail';
 import CategoryPage from './components/CategoryPage';
 import './App.css';
 
+
+
 function Home() {
   return (
     <>
