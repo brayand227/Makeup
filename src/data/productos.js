@@ -103,7 +103,7 @@ export const productos = [
     categoria: "Maquillaje Pemium",
     precio: 26.0000,
     imagen: "/Makeup/images/Duo_shell_tint_mini_mimosa_Bloomshell.jpeg",
-    imagenDetalle: "/Makeup/images/Duo_shell_tint_mini_mimosa_Bloo.jpeg",
+    imagenDetalle: "/Makeup/images/Duo_shell_tint_mini_mimosa_Bloomshell.jpeg",
     descripcion: "Dúo de tintas labiales mini con tono mimosa, acabado natural y duradero.",
     detalles: ["Dos tonos en uno", "Acabado natural", "Larga duración", "Tamaño mini"],
     whatsapp: "Hola, quiero información sobre el Duo Shell Tint Mini de Bloo Beauty"

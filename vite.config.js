@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Makeup/' // Cambia esto por el nombre de tu repositorio
+  base: '/Makeup/'
 })
