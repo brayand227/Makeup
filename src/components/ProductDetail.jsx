@@ -7,8 +7,23 @@ function ProductDetail() {
   const navigate = useNavigate();
   const producto = productos.find(p => p.id === parseInt(id));
 
+  // Función para formatear precios en pesos colombianos
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat('es-CO', {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(price);
+  };
+
   if (!producto) {
-    return <div className="not-found">Producto no encontrado</div>;
+    return (
+      <div className="error-page">
+        <h2>Producto no encontrado</h2>
+        <button onClick={() => navigate('/')} className="btn-back-home">
+          Volver al inicio
+        </button>
+      </div>
+    );
   }
 
   const handleWhatsApp = () => {
@@ -31,7 +46,7 @@ function ProductDetail() {
         <div className="product-detail-info">
           <div className="product-detail-brand">{producto.marca}</div>
           <h1 className="product-detail-title">{producto.nombre}</h1>
-          <div className="product-detail-price">${producto.precio.toFixed(2)}</div>
+          <div className="product-detail-price">${formatPrice(producto.precio)}</div>
           <div className="product-detail-tax">Impuestos incluidos</div>
           
           <div className="product-detail-description">

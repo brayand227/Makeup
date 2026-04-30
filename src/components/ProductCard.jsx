@@ -4,8 +4,16 @@ import './ProductCard.css';
 function ProductCard({ producto }) {
   const navigate = useNavigate();
 
+  // Función para formatear precios en pesos colombianos
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat('es-CO', {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+    }).format(price);
+  };
+
   const handleWhatsApp = (e) => {
-    e.stopPropagation(); // Evita que navegue al producto
+    e.stopPropagation();
     const numeroAsesor = "573106436784";
     const mensaje = encodeURIComponent(producto.whatsapp);
     window.open(`https://wa.me/${numeroAsesor}?text=${mensaje}`, '_blank');
@@ -18,7 +26,7 @@ function ProductCard({ producto }) {
   return (
     <div className="product-card-premium" onClick={handleVerDetalle}>
       <div className="product-badge">
-        {producto.marca === "Dior" ? "DIOR" : "PANDORA"}
+        {producto.marca === "Dior" ? "DIOR" : producto.marca}
       </div>
       <div className="product-image-container">
         <img src={producto.imagen} alt={producto.nombre} className="product-image-premium" />
@@ -31,7 +39,7 @@ function ProductCard({ producto }) {
         <h3 className="product-name">{producto.nombre}</h3>
         <p className="product-description-premium">{producto.descripcion.substring(0, 60)}...</p>
         <div className="product-price-section">
-          <span className="product-price-premium">${producto.precio.toFixed(2)}</span>
+          <span className="product-price-premium">${formatPrice(producto.precio)}</span>
           <span className="product-tax">Impuestos incluidos</span>
         </div>
         <button className="btn-whatsapp" onClick={handleWhatsApp}>
