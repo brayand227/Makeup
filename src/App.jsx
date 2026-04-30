@@ -14,7 +14,6 @@ function Home() {
           <div className="logo-section">
             <div className="logo-icon">
               <span className="logo-glow">✨</span>
-              <span className="logo-star">⭐</span>
               <span className="logo-moon">🌙</span>
             </div>
             

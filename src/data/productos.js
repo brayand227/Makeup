@@ -1,5 +1,5 @@
 // Importar imágenes locales
-// NOTA: Cambia estas rutas por los nombres reales de tus imágenes
+// NOTA: Todas las imágenes deben estar en public/images/
 
 export const categorias = [
   {
@@ -17,90 +17,136 @@ export const categorias = [
     fondo: "linear-gradient(135deg, #f3a683 0%, #e77f67 100%)"
   },
   {
-    id: 3,
-    nombre: "Sombras de Ojos",
-    descripcion: "Paletas de alta pigmentación",
-    imagen: "/Makeup/images/sombras-categoria.jpg",
-    fondo: "linear-gradient(135deg, #a8e6cf 0%, #3b8d6e 100%)"
-  }
+    id: 4,
+    nombre: "Rubores",
+    descripcion: "Rubores de acabado natural y duradero",
+    imagen: "/Makeup/images/rubores-categoria.jpg",
+    fondo: "linear-gradient(135deg, #ffd3b6 0%, #ffaaa5 100%)"
+  },
+
 ];
 
 export const productos = [
-  // LABIALES DIOR
+  // ========== LABIALES ==========
   {
     id: 1,
-    nombre: "Rouge Dior 999",
-    marca: "Dior",
+    nombre: "Peptide Lip Balm",
+    marca: "Atenea",
     categoria: "Labiales",
-    precio: 42.99,
-    imagen: "/Makeup/images/dior.jpg",
-    imagenDetalle: "/Makeup/images/dior-detalle.jpg",
-    descripcion: "Labial rojo icónico de larga duración con acabado satinado. Fórmula enriquecida con extracto de flores de loto.",
-    detalles: ["Larga duración 12h", "Acabado satinado", "Hidratación intensa", "Pigmentación pura"],
-    whatsapp: "Hola, quiero información sobre el Rouge Dior 999"
+    precio: 18.99,
+    imagen: "/Makeup/images/Peptide_lip_balm.jpeg",
+    imagenDetalle: "/Makeup/images/Peptide_lip_balm.jpeg",
+    descripcion: "Bálsamo labial con péptidos que hidrata y repara los labios, dejándolos suaves y voluminosos.",
+    detalles: ["Hidratación profunda", "Efecto voluminizador", "Fórmula con péptidos", "Acabado natural"],
+    whatsapp: "Hola, quiero información sobre el Peptide Lip Balm de Atenea"
   },
   {
     id: 2,
-    nombre: "Pandora Velvet Matte",
-    marca: "Pandora Beauty",
+    nombre: "Mini Peptide Lip Balm",
+    marca: "Atenea",
     categoria: "Labiales",
-    precio: 28.99,
-    imagen: "/Makeup/images/pandora.jpg",
-    imagenDetalle: "/Makeup/images/pandora-detalle.jpg",
-    descripcion: "Labial mate efecto terciopelo con textura cremosa que no reseca los labios.",
-    detalles: ["Efecto terciopelo", "No transfiere", "Duración 8h", "Textura cremosa"],
-    whatsapp: "Hola, quiero información sobre el Pandora Velvet Matte"
+    precio: 10.99,
+    imagen: "/Makeup/images/Mini_peptide_lip_balm_atenea.jpeg",
+    imagenDetalle: "/Makeup/images/Mini_peptide_lip_balm_atenea.jpeg",
+    descripcion: "Versión mini del bálsamo labial con péptidos, perfecto para llevar a todas partes.",
+    detalles: ["Tamaño de bolsillo", "Hidratación intensa", "Misma fórmula que el original", "Ideal para viajes"],
+    whatsapp: "Hola, quiero información sobre el Mini Peptide Lip Balm de Atenea"
   },
-  
-  // BASES
+
+  // ========== CORRECTORES ==========
   {
     id: 3,
-    nombre: "Dior Forever Skin Glow",
-    marca: "Dior",
+    nombre: "Corrector Atenea",
+    marca: "Atenea",
     categoria: "Bases y Correctores",
-    precio: 54.99,
-    imagen: "/Makeup/images/dior-base.jpg",
-    imagenDetalle: "/Makeup/images/dior-detalle-base.jpg",
-    descripcion: "Base luminosa con efecto glow natural. Acabado radiante y efecto segunda piel.",
-    detalles: ["SPF 20", "Efecto glow", "Cobertura media", "24h duración"],
-    whatsapp: "Hola, quiero información sobre la base Dior Forever Skin Glow"
+    precio: 24.99,
+    imagen: "/Makeup/images/Corrector_atenea.jpeg",
+    imagenDetalle: "/Makeup/images/Corrector_atenea.jpeg",
+    descripcion: "Corrector de alta cobertura que disimula ojeras e imperfecciones con acabado natural.",
+    detalles: ["Alta cobertura", "Acabado natural", "Larga duración", "Fórmula hidratante"],
+    whatsapp: "Hola, quiero información sobre el Corrector de Atenea"
   },
   {
     id: 4,
-    nombre: "Pandora Luminous Foundation",
-    marca: "Pandora Beauty",
+    nombre: "Corrector ANI-k",
+    marca: "ANI-k",
     categoria: "Bases y Correctores",
-    precio: 38.99,
-    imagen: "/Makeup/images/pandora-base.jpg",
-    imagenDetalle: "/Makeup/images/pandora-detalle-base.jpg",
-    descripcion: "Base de cobertura media a alta con acabado luminoso y efecto difuminador.",
-    detalles: ["Cobertura personalizable", "Acabado luminoso", "Hidratante", "Larga duración"],
-    whatsapp: "Hola, quiero información sobre la base Pandora Luminous"
+    precio: 22.99,
+    imagen: "/Makeup/images/Corrector_ANI-k.jpeg",
+    imagenDetalle: "/Makeup/images/Corrector_ANI-k.jpeg",
+    descripcion: "Corrector ligero con acabado luminoso, ideal para iluminar el contorno de ojos.",
+    detalles: ["Acabado luminoso", "Textura ligera", "Ilumina la mirada", "Fácil difuminado"],
+    whatsapp: "Hola, quiero información sobre el Corrector ANI-k"
   },
-  
-  // SOMBRAS
+
+  // ========== CONTORNO ==========
   {
     id: 5,
-    nombre: "Dior Backstage Eye Palette",
-    marca: "Dior",
-    categoria: "Sombras de Ojos",
-    precio: 49.99,
-    imagen: "/Makeup/images/dior-sombras.jpg",
-    imagenDetalle: "/Makeup/images/dior-detalle-sombras.jpg",
-    descripcion: "Paleta de 9 tonos profesionales para looks desde naturales hasta dramáticos.",
-    detalles: ["9 tonos", "Alta pigmentación", "Acabados variados", "Fórmula suave"],
-    whatsapp: "Hola, quiero información sobre la paleta Dior Backstage"
+    nombre: "Contorno en Barra Atenea",
+    marca: "Atenea",
+    categoria: "Bases y Correctores",
+    precio: 26.99,
+    imagen: "/Makeup/images/contorno_en_barrera_Atenea.jpeg",
+    imagenDetalle: "/Makeup/images/contorno_en_barrera_Atenea.jpeg",
+    descripcion: "Contorno en barra para esculpir y definir el rostro con acabado natural y difuminado perfecto.",
+    detalles: ["Textura cremosa", "Fácil difuminado", "Acabado natural", "Larga duración"],
+    whatsapp: "Hola, quiero información sobre el Contorno en Barra de Atenea"
   },
+
+  // ========== RUBORES ==========
   {
     id: 6,
-    nombre: "Pandora Nude Dreams",
-    marca: "Pandora Beauty",
-    categoria: "Sombras de Ojos",
-    precio: 32.99,
-    imagen: "/Makeup/images/pandora-sombras.jpg",
-    imagenDetalle: "/Makeup/images/pandora-detalle-sombras.jpg",
-    descripcion: "Paleta de tonos nude y marrones perfecta para el día a día.",
-    detalles: ["12 tonos", "Acabado mate y shimmer", "Fácil difuminado", "Larga duración"],
-    whatsapp: "Hola, quiero información sobre la paleta Pandora Nude Dreams"
+    nombre: "Rubor Atenea en Barra",
+    marca: "Atenea",
+    categoria: "Rubores",
+    precio: 19.99,
+    imagen: "/Makeup/images/Rubor_atenea_enbarra.jpeg",
+    imagenDetalle: "/Makeup/images/Rubor_atenea_enbarra.jpeg",
+    descripcion: "Rubor en barra con acabado cremoso que se difumina fácilmente para un look saludable.",
+    detalles: ["Textura cremosa", "Acabado natural", "Fácil aplicación", "Larga duración"],
+    whatsapp: "Hola, quiero información sobre el Rubor Atenea en Barra"
+  },
+
+
+  // ========== DÚO SHELL TINT ==========
+  {
+    id: 8,
+    nombre: "Duo Shell Tint Mini",
+    marca: "Bloo Beauty",
+    categoria: "Labiales",
+    precio: 15.99,
+    imagen: "/Makeup/images/Duo_shell_tint_mini_mimosa_Bloo.jpeg",
+    imagenDetalle: "/Makeup/images/Duo_shell_tint_mini_mimosa_Bloo.jpeg",
+    descripcion: "Dúo de tintas labiales mini con tono mimosa, acabado natural y duradero.",
+    detalles: ["Dos tonos en uno", "Acabado natural", "Larga duración", "Tamaño mini"],
+    whatsapp: "Hola, quiero información sobre el Duo Shell Tint Mini de Bloo Beauty"
+  },
+
+  // ========== POLVOS ==========
+  {
+    id: 9,
+    nombre: "Polvo Suelto Mini",
+    marca: "Atenea",
+    categoria: "Bases y Correctores",
+    precio: 14.99,
+    imagen: "/Makeup/images/Polvo_suelto_mini.jpeg",
+    imagenDetalle: "/Makeup/images/Polvo_suelto_mini.jpeg",
+    descripcion: "Polvo suelto mini que sella el maquillaje con acabado mate y natural.",
+    detalles: ["Acabado mate", "Sella el maquillaje", "Controla brillos", "Tamaño mini"],
+    whatsapp: "Hola, quiero información sobre el Polvo Suelto Mini de Atenea"
+  },
+
+  // ========== TINTA DE MAQUILLAJE ==========
+  {
+    id: 10,
+    nombre: "Tinta de Maquillaje Serum56",
+    marca: "Serum56",
+    categoria: "Bases y Correctores",
+    precio: 28.99,
+    imagen: "/Makeup/images/Tinta_de_maquillaje_serum56.jpeg",
+    imagenDetalle: "/Makeup/images/Tinta_de_maquillaje_serum56.jpeg",
+    descripcion: "Tinta de maquillaje con fórmula serum que unifica el tono y deja la piel radiante.",
+    detalles: ["Efecto segunda piel", "Fórmula con serum", "Acabado radiante", "Cobertura natural"],
+    whatsapp: "Hola, quiero información sobre la Tinta de Maquillaje Serum56"
   }
 ];
