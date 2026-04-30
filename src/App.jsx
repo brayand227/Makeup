@@ -20,7 +20,7 @@ function Home() {
             <h1 className="logo-text"> </h1>
             <div className="logo-subtitle">LUXURY COSMETICS</div>
           </div>
-          <p className="header-tagline">Maquillaje de alta calidad con un toque místico y eleganteeee</p>
+          <p className="header-tagline">Maquillaje de alta calidad con un toque místico y elegante</p>
         </div>
         <div className="header-decoration"></div>
       </header>

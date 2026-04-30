@@ -102,7 +102,7 @@ export const productos = [
     marca: "Bloo Beauty",
     categoria: "Maquillaje Pemium",
     precio: 26.000,
-    imagen: "/Makeup/images/Duo_shell_tint_mini_mimosa_Bloo.jpeg",
+    imagen: "/Makeup/images/Duo_shell_tint_mini_mimosa_Bloomshell.jpeg",
     imagenDetalle: "/Makeup/images/Duo_shell_tint_mini_mimosa_Bloo.jpeg",
     descripcion: "Dúo de tintas labiales mini con tono mimosa, acabado natural y duradero.",
     detalles: ["Dos tonos en uno", "Acabado natural", "Larga duración", "Tamaño mini"],
