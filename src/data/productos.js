@@ -147,5 +147,7 @@ export const productos = [
     descripcion: "Sombra de ojos individual con alta pigmentación y acabado suave y duradero. tonos: lilo,oki,lanai",
     detalles: ["Alta pigmentación", "Acabado suave", "Larga duración", "Fácil difuminado"],
     whatsapp: "Hola, quiero información sobre la Sombra Individual de Atenea"
-  }
-];
+  }  
+
+  
+]; 
